@@ -5,24 +5,55 @@ html, body {
     margin: 0;
 }
 
-body {
-    background-color: #c9e2fa;
-    color: #000000;
+.main-container {
+    background-color: #F3F5FC;
     display: flex;
     flex-direction: column;
+    min-height: 100vh; 
+}
+
+.container-flex {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
 }
 
 .content {
-    
+    flex: 1; 
+    gap: 10px;
+    margin-left: 200px;
+}
+
+.content_imagen {
     display: flex;
-    flex-direction: column;
-    gap: 10px; /* Espacio entre los elementos del contenedor */
-    margin-left: 120px;
+    align-items: center; /* Centra verticalmente la imagen dentro del contenedor */
+    justify-content: center; /* Centra horizontalmente la imagen dentro del contenedor */
+    height: 100%; /* Asegura que el contenedor ocupe toda la altura disponible */
+    padding: 20px 0 ; /* Ajusta los espacios superior e inferior */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del tamaño */
+    padding-right: 20px;
+}
+
+.content_imagen img {
+    margin-top: auto; /* Empuja la imagen hacia abajo */
+    margin-bottom: auto; /* Mantiene un espacio inferior */
+    max-height: calc(100vh - 40px); /* Asegura que la imagen se ajuste dentro de la ventana */
+    object-fit: contain; /* Mantiene la proporción de la imagen */
 }
 
 .ingrese_texto {
     border: none;
-    background-color: #c9e2fa;
+    background-color: #F3F5FC;
+    width: 580px;
+    height: 50px;
+    color: #12376e;
+    font-size: 18px;
+    margin-top: 90px;
+}
+
+.salida_texto {
+    border: none;
+    background-color: #F3F5FC;
     width: 580px;
     height: 50px;
     color: #12376e;
@@ -43,6 +74,7 @@ body {
     display: flex;
     align-items: center;
     gap: 5px;
+    margin-top: 250px;
 }
 
 .p_imagen {
@@ -59,7 +91,7 @@ body {
     padding: 15.5px 0;
     text-decoration: none;
     color: #f8f6f6;
-    background-color: #12376e;
+    background-color: #0A3781;
     font-family: 'inter';
     display: flex;
     justify-content: center;
@@ -76,12 +108,33 @@ body {
     padding: 15.5px 0;
     text-decoration: none;
     color: #12376e;
-    background-color: #9eacc2;
+    background-color: #D8DFE8;
     font-family: 'inter';
     border: 2px solid;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.enlace_copiar {
+    width: 200px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15.5px 0;
+    text-decoration: none;
+    color: #12376e;
+    background-color: #D8DFE8;
+    font-family: 'inter';
+    border: 2px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
 }
 
 .container {
