@@ -12,7 +12,8 @@
         <div class="container-flex">
             <div class="content">
                 <input class="ingrese_texto" type="text" placeholder="Ingrese el texto aquí">
-                <textarea class="salida_texto" name="" id="" cols="30" rows="10" hidden></textarea>
+                <textarea class="salida_texto hidden" name="" id="text-area1" cols="30" rows="10"></textarea>
+                <div id="mensaje-error" class="hidden" style="color: red;"></div>
                 <p class="p_indicaciones">
                     <img src="img/information.png" alt="informacion" class="p_imagen"> Solo letras minúsculas y sin acentos
                 </p><br>
@@ -23,7 +24,7 @@
             </div>
             <div class="content_imagen">
                 <img src="img/1.png" alt="imagen de Encriptador" id="img-encriptacion">
-                <textarea id="text-area" class="hidden" placeholder="Resultado de encriptación/desencriptación"></textarea>
+                <textarea id="text-area2" class="hidden segundo-textarea" placeholder="Resultado de encriptación/desencriptación"></textarea>
                 <a class="enlace_copiar hidden" href="">Copiar</a>
             </div>
         </div>
@@ -31,5 +32,6 @@
             <p>&copy; 2024 Desarrollado por Develop Jonathan Corro Acosta. Todos los derechos reservados.</p>
         </footer>
     </div>
+    <script src="js/funciones.js"></script>
 </body>
 </html>
